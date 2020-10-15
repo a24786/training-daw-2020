@@ -6,6 +6,8 @@ window.onload = function() {
 
     document.getElementById('pregunta_si').onchange = changeValue
     document.getElementById('pregunta_no').onchange = changeValue
+
+    
 }
 
 function changeValue(e) {
