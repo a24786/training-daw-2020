@@ -6,12 +6,14 @@
     "configurations": [
         {
             "name": "Launch Program",
-            "program": "${workspaceFolder}/11_custom_filter/data.js",
+            "program": "${file}",
             "request": "launch",
+            "runtimeVersion": "12.18.1",
             "skipFiles": [
                 "<node_internals>/**"
             ],
             "type": "node"
         }
+
     ]
 }

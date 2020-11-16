@@ -1,0 +1,16 @@
+{
+  "name": "01_init",
+  "version": "1.0.0",
+  "description": "Sample project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sample",
+    "project",
+    "vuejs"
+  ],
+  "author": "Óliver Hierro",
+  "license": "GPL-3.0"
+}
