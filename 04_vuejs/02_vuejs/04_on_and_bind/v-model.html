@@ -10,7 +10,10 @@
   <main>
     Sample vuejs application
     <div id="app">
-        <span :title="title">Esto es un ejempo</span>
+      Nombre: <input v-model="nombre" type="text" />
+      <div>
+        Nombre escrito: {{nombre}}
+      </div>
     </div>
   </main>
 
@@ -18,7 +21,7 @@
     let app = new Vue({
       el: '#app',
       data: {
-        title: 'Hora ' + new Date()
+        nombre: 'Nombre inicial'
       }
     })
   </script>
