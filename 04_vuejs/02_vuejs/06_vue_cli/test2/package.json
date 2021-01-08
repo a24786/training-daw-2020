@@ -1,13 +1,15 @@
 {
-  "name": "test",
+  "name": "test2",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue serve",
+    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "bootstrap": "^4.5.3",
+    "bootstrap-vue": "^2.19.0",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },

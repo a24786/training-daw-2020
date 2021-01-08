@@ -5,20 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+  <!-- Load required Bootstrap and BootstrapVue CSS -->
+  <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+  <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css" />
+
+  <!-- Load polyfills to support older browsers -->
+  <script src="//polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver" crossorigin="anonymous"></script>
+
+  <!-- Load Vue followed by BootstrapVue -->
+  <script src="//unpkg.com/vue@latest/dist/vue.min.js"></script>
+  <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
+
+  <!-- Load the following for BootstrapVueIcons support -->
+  <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue-icons.min.js"></script>
+
 </head>
 <body>
   <main>
     Sample vuejs application
     <div id="app">
+      <div class="d-flex flex-row justify-content-center mb-4">
+        <div class="w-75 d-flex flex-row justify-content-center">
+          <b-form-input
+              v-model="text"
+              placeholder="Enter your name"
+              class="col-9"
+            ></b-form-input>
+          <b-button
+            variant="danger"
+            class="col-3"
+            >Peligro</b-button>
+        </div>
+      </div>
+  
+      <div class="d-flex flex-row justify-content-center">
+        <b-list-group class="w-75">
+          <b-list-group-item>Cras justo odio</b-list-group-item>
+          <b-list-group-item>Dapibus ac facilisis in</b-list-group-item>
+          <b-list-group-item>Morbi leo risus</b-list-group-item>
+          <b-list-group-item>Porta ac consectetur ac</b-list-group-item>
+          <b-list-group-item>Vestibulum at eros</b-list-group-item>
+        </b-list-group>
+      </div>
     </div>
   </main>
 
   <script>
+    import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+    
     let app = new Vue({
       el: '#app',
       data: {
       }
     })
+
+    // Install BootstrapVue
+    Vue.use(BootstrapVue)
+    // Optionally install the BootstrapVue icon components plugin
+    Vue.use(IconsPlugin)
   </script>
 </body>
 </html>
