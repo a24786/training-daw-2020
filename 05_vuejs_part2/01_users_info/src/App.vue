@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Counter"/>
-    <HelloWorld :msg="msg" />
+    <HelloWorld msg="Not empty" anotherMsg="Could be empty"/>
+    <!-- <HelloWorld :msg="msg" /> -->
   </div>
 </template>
 
@@ -15,6 +15,7 @@ export default {
   },
   data() {
     return {
+      msg: 'Some title',
       users: [
         { id: 0, name: 'Cloyd', surname: 'Oberbrunner', years: 34, score: 65 },
         { id: 1, name: 'Kevon', surname: 'Schaden', years: 24, score: 45 },
